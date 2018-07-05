@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Donateron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--materializecss css file -->
+    <link type="text/css" rel="stylesheet" href="sass/materialize.css" media="screen,projection" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <!-- materializecss js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <nav class="nav-extended red lighten-1 navbar-fixed">
+
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Suliteos</a>
+        </div>
+        <div class="nav-content">
+
+            <ul class="tabs tabs-transparent">
+                <li class="tab">
+                    <a class="active" href="#login">LogIn</a>
+                </li>
+                <li class="tab">
+                    <a  href="#signup">SignUp</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="login" class="col s12 ">
+        <div class="form-wrapper">
+            <div class="row">
+                <br>
+                <br>
+                <form action="" class="col s12">
+                    <div class="row">
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Email</label>
+                            <span class="helper-text" data-error="Please enter email in correct format" data-success="">Enter your email</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password" type="password" class="validate" required>
+                            <label for="password">Password</label>
+                            <span class="helper-text" data-error="Your password is wrong" data-success="">Enter your password</span>
+                        </div>
+                    </div>
+                    What are you?
+                    <p>
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" checked />
+                            <span>Donator</span>
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" checked />
+                            <span>Hospital Authority</span>
+                        </label>
+                    </p>
+                    <br>
+                    <br>
+                    <button class="waves-effect waves-black btn-flat" type="submit" name="action">LogIn
+                        <i class="material-icons right">chevron_right</i>
+                    </button>
+                </form>
+                
+            </div>
+            
+        </div>
+        <footer class="page-footer red lighten-1">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l6 s12">
+                      <h5 class="white-text">Donate now! </h5>
+                      <p class="grey-text text-lighten-4">Be a part of the cause</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-copyright red">
+                  <div class="container">
+                  Design by:-Tanuj
+                  <a class="grey-text text-lighten-4 right" href="https://www.github.com/Tanuj69/Suliteos">Github</a>
+                  </div>
+                </div>
+              </footer>
+    </div>
+    <div id="signup" class="col s12">
+        <div class="nav2 red accent-2">
+
+            <ul class="tabs tabs-transparent">
+                <li class="tab">
+                    <a href="#donators">As a Donator</a>
+                </li>
+                <li class="tab">
+                    <a class="active" href="#hospital">For Hospitals </a>
+                </li>
+            </ul>
+        </div>
+        <div id="donators" class="form-wrapper1">
+            <div class="row">
+                <form action="" class="col s12">
+                    <div class="row">
+
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="first_name" type="text" class="validate" required>
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate" required>
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="mail" type="email" class="validate" required>
+                            <label for="mail">Email</label>
+                            <span class="helper-text" data-error="Please enter email in correct format" data-success=""></span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">add_location</i>
+                            <input id="add_location" type="tel" class="validate">
+                            <label for="add_location">Address</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">opacity</i>
+                            <input id="opacity" type="tel" class="validate">
+                            <label for="opacity">Blood type</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">date_range</i>
+                            <input type="text" class="datepicker">
+                            <label for="date_range">Date last donated</label>
+                        </div>
+                        <button class="waves-effect waves-black btn-flat" type="submit" name="action">Register
+                            <i class="material-icons right">chevron_right</i>
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+           
+        
+        </div>
+        <div id="hospital" class="form-wrapper1">
+            <div class="row">
+                <form action="" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">local_hospital</i>
+                            <input id="local_hospital" type="text" class="validate" required>
+                            <label for="local_hospital">Name of the Hospital</label>
+                        </div>
+                        
+                        <div class="input-field col s12">
+                                <i class="material-icons prefix">add_location</i>
+                                <input id="add_location" type="text" class="validate">
+                                <label for="add_location">Address</label>
+                            </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate" required>
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">opacity</i>
+                            <input id="opacity" type="text" class="validate">
+                            <label for="opacity">Average Blood Required/Month</label>
+                        </div>
+                        <div class="input-field col s12">
+                                <i class="material-icons prefix">person</i>
+                                <input id="add_location" type="text" class="validate">
+                                <label for="add_location">Person Incharge</label>
+                            </div>
+                            <button class="waves-effect waves-black btn-flat" type="submit" name="action">Register
+                                    <i class="material-icons right">chevron_right</i>
+                                </button>
+
+                    </div>
+                </form>
+                
+            </div>
+            
+
+
+        </div>
+        <footer class="page-footer red lighten-1">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Donate now! </h5>
+                  <p class="grey-text text-lighten-4">Be a part of the cause</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright red">
+              <div class="container">
+              Design by:-Tanuj
+              <a class="grey-text text-lighten-4 right" href="https://www.github.com/Tanuj69/Suliteos">Github</a>
+              </div>
+            </div>
+          </footer>
+    
+        
+    </div>
+    
+    <script>
+        M.AutoInit();
+    </script>
+
+</body>
+
+</html>
