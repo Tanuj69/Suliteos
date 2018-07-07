@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Donateron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="sass/main.css" />
     <!--materializecss css file -->
     <link type="text/css" rel="stylesheet" href="sass/materialize.css" media="screen,projection" />
     <link rel="icon" href="favicon.png" type="image/x-icon" />
@@ -31,7 +31,7 @@
                     <a class="active" href="#login">LogIn</a>
                 </li>
                 <li class="tab">
-                    <a  href="#signup">SignUp</a>
+                    <a href="#signup">SignUp</a>
                 </li>
             </ul>
         </div>
@@ -59,7 +59,7 @@
                             <span class="helper-text" data-error="Your password is wrong" data-success="">Enter your password</span>
                         </div>
                     </div>
-                    What are you?
+                    <!-- What are you?
                     <p>
                         <label>
                             <input class="with-gap" name="group3" type="radio" checked />
@@ -69,33 +69,33 @@
                             <input class="with-gap" name="group3" type="radio" checked />
                             <span>Hospital Authority</span>
                         </label>
-                    </p>
+                    </p> -->
                     <br>
                     <br>
                     <button class="waves-effect waves-black btn-flat" type="submit" name="action">LogIn
                         <i class="material-icons right">chevron_right</i>
                     </button>
                 </form>
-                
+
             </div>
-            
+
         </div>
         <footer class="page-footer red lighten-1">
-                <div class="container">
-                  <div class="row">
+            <div class="container">
+                <div class="row">
                     <div class="col l6 s12">
-                      <h5 class="white-text">Donate now! </h5>
-                      <p class="grey-text text-lighten-4">Be a part of the cause</p>
+                        <h5 class="white-text">Donate now! </h5>
+                        <p class="grey-text text-lighten-4">Be a part of the cause</p>
                     </div>
-                  </div>
                 </div>
-                <div class="footer-copyright red">
-                  <div class="container">
-                  Design by:-Tanuj
-                  <a class="grey-text text-lighten-4 right" href="https://www.github.com/Tanuj69/Suliteos">Github</a>
-                  </div>
+            </div>
+            <div class="footer-copyright red">
+                <div class="container">
+                    Design by:-Tanuj
+                    <a class="grey-text text-lighten-4 right" href="https://www.github.com/Tanuj69/Suliteos">Github</a>
                 </div>
-              </footer>
+            </div>
+        </footer>
     </div>
     <div id="signup" class="col s12">
         <div class="nav2 red accent-2">
@@ -125,29 +125,35 @@
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">phone</i>
-                            <input id="icon_telephone" type="tel" class="validate" required>
-                            <label for="icon_telephone">Telephone</label>
+                            <input id="mobile" type="tel" class="validate" required>
+                            <label for="mobile">Telephone</label>
                         </div>
 
                         <div class="input-field col s12">
                             <i class="material-icons prefix">mail</i>
-                            <input id="mail" type="email" class="validate" required>
-                            <label for="mail">Email</label>
+                            <input id="mail0" type="email" class="validate" required>
+                            <label for="mail0">Email</label>
                             <span class="helper-text" data-error="Please enter email in correct format" data-success=""></span>
                         </div>
                         <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password0" type="password" class="validate" required>
+                            <label for="password0">Password</label>
+                            <span class="helper-text" data-error="Your password is wrong" data-success="">Enter your password</span>
+                        </div>
+                        <div class="input-field col s12">
                             <i class="material-icons prefix">add_location</i>
-                            <input id="add_location" type="tel" class="validate">
-                            <label for="add_location">Address</label>
+                            <input id="address" type="tel" class="validate">
+                            <label for="address">Address</label>
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">opacity</i>
-                            <input id="opacity" type="tel" class="validate">
-                            <label for="opacity">Blood type</label>
+                            <input id="blood" type="tel" class="validate">
+                            <label for="blood">Blood type</label>
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">date_range</i>
-                            <input type="text" class="datepicker">
+                            <input id="date" type="text" class="datepicker">
                             <label for="date_range">Date last donated</label>
                         </div>
                         <button class="waves-effect waves-black btn-flat" type="submit" name="action">Register
@@ -157,8 +163,8 @@
                     </div>
                 </form>
             </div>
-           
-        
+
+
         </div>
         <div id="hospital" class="form-wrapper1">
             <div class="row">
@@ -166,62 +172,74 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">local_hospital</i>
-                            <input id="local_hospital" type="text" class="validate" required>
-                            <label for="local_hospital">Name of the Hospital</label>
+                            <input id="hospital" type="text" class="validate" required>
+                            <label for="hospital">Name of the Hospital</label>
                         </div>
-                        
+
                         <div class="input-field col s12">
-                                <i class="material-icons prefix">add_location</i>
-                                <input id="add_location" type="text" class="validate">
-                                <label for="add_location">Address</label>
-                            </div>
+                            <i class="material-icons prefix">add_location</i>
+                            <input id="address0" type="text" class="validate">
+                            <label for="address0">Address</label>
+                        </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">phone</i>
-                            <input id="icon_telephone" type="tel" class="validate" required>
-                            <label for="icon_telephone">Telephone</label>
+                            <input id="mobile0" type="tel" class="validate" required>
+                            <label for="mobile0">Telephone</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="mail1" type="email" class="validate" required>
+                            <label for="mail1">Email</label>
+                            <span class="helper-text" data-error="Please enter email in correct format" data-success=""></span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password1" type="password" class="validate" required>
+                            <label for="password1">Password</label>
+                            <span class="helper-text" data-error="Your password is wrong" data-success="">Enter your password</span>
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">opacity</i>
-                            <input id="opacity" type="text" class="validate">
-                            <label for="opacity">Average Blood Required/Month</label>
+                            <input id="blood0" type="text" class="validate">
+                            <label for="blood0">Average Blood Required/Month</label>
                         </div>
                         <div class="input-field col s12">
-                                <i class="material-icons prefix">person</i>
-                                <input id="add_location" type="text" class="validate">
-                                <label for="add_location">Person Incharge</label>
-                            </div>
-                            <button class="waves-effect waves-black btn-flat" type="submit" name="action">Register
-                                    <i class="material-icons right">chevron_right</i>
-                                </button>
+                            <i class="material-icons prefix">person</i>
+                            <input id="incharge" type="text" class="validate">
+                            <label for="incharge">Person Incharge</label>
+                        </div>
+                        <button class="waves-effect waves-black btn-flat" type="submit" name="action">Register
+                            <i class="material-icons right">chevron_right</i>
+                        </button>
 
                     </div>
                 </form>
-                
+
             </div>
-            
+
 
 
         </div>
         <footer class="page-footer red lighten-1">
             <div class="container">
-              <div class="row">
-                <div class="col l6 s12">
-                  <h5 class="white-text">Donate now! </h5>
-                  <p class="grey-text text-lighten-4">Be a part of the cause</p>
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Donate now! </h5>
+                        <p class="grey-text text-lighten-4">Be a part of the cause</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="footer-copyright red">
-              <div class="container">
-              Design by:-Tanuj
-              <a class="grey-text text-lighten-4 right" href="https://www.github.com/Tanuj69/Suliteos">Github</a>
-              </div>
+                <div class="container">
+                    Design by:-Tanuj
+                    <a class="grey-text text-lighten-4 right" href="https://www.github.com/Tanuj69/Suliteos">Github</a>
+                </div>
             </div>
-          </footer>
-    
-        
+        </footer>
+
+
     </div>
-    
+
     <script>
         M.AutoInit();
     </script>
